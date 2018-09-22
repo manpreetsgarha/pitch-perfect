@@ -14,7 +14,6 @@
 		3FA4F733213CD5E000F043E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4F732213CD5E000F043E8 /* Assets.xcassets */; };
 		3FA4F736213CD5E000F043E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA4F734213CD5E000F043E8 /* LaunchScreen.storyboard */; };
 		3FCB2AEC2156B29E00907DB6 /* PlayerSoundsController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB2AEB2156B29E00907DB6 /* PlayerSoundsController+Audio.swift */; };
-		3FCB2AEE2156DDA500907DB6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3FCB2AED2156DDA500907DB6 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,7 +132,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FCB2AEE2156DDA500907DB6 /* .gitignore in Resources */,
 				3FA4F736213CD5E000F043E8 /* LaunchScreen.storyboard in Resources */,
 				3FA4F733213CD5E000F043E8 /* Assets.xcassets in Resources */,
 				3FA4F731213CD5E000F043E8 /* Main.storyboard in Resources */,
