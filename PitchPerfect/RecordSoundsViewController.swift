@@ -18,8 +18,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         stopRecording.isEnabled=false
-        // Do any additional setup after loading the view, typically from a nib.
+        stopRecording.isEnabled=false
     }
     override func viewWillAppear(_ animated: Bool) {
        
@@ -30,18 +29,14 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func recordAudio(_ sender: Any) {
-        recordingLabel.text="Recording started"
-        stopRecording.isEnabled=true
-        record.isEnabled=false
+        configureUi(true)
         let dir=NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask,true)[0] as String
         let recName="recordedVoice.wav"
         let pathArray=[dir, recName]
         let filePath=URL(string: pathArray.joined(separator:"/"))
-        print(filePath!)
         let session=AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSessionCategoryPlayAndRecord,with: AVAudioSessionCategoryOptions.defaultToSpeaker)
         try! audioRecorder = AVAudioRecorder(url: filePath!,settings: [:])
@@ -53,12 +48,16 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
     @IBAction func stopRecording(_ sender: Any) {
-        stopRecording.isEnabled=false
-        record.isEnabled=true
-        recordingLabel.text="Tap to record"
+        configureUi(false)
         audioRecorder.stop()
         let session = AVAudioSession.sharedInstance()
         try! session.setActive(false)
+    }
+    
+    func configureUi(_ recording: Bool){
+        stopRecording.isEnabled=recording
+        record.isEnabled = !recording
+        recordingLabel.text = recording ? "Recording started" : "Tap to record"
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
