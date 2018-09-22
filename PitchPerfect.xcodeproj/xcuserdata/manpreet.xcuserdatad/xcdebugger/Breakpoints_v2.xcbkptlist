@@ -25,29 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PitchPerfect/RecordSoundsViewController.swift"
-            timestampString = "559309172.82575"
+            filePath = "PitchPerfect/PlayerSoundsController+Audio.swift"
+            timestampString = "559333619.463069"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "recordAudio(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PitchPerfect/RecordSoundsViewController.swift"
-            timestampString = "559309172.827085"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "recordAudio(_:)"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "playSound(rate:pitch:echo:reverb:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
