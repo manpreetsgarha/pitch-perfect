@@ -1,5 +1,5 @@
 # PitchPerfect
-It's an iPhone app that records a conversation with you and a friend and plays it back with different audio effects!
+It's my first iPhone app, it records a conversation with you and a friend and plays it back with different audio effects!
 
 The app contains two pages of content (one each for recording and playing audio), and uses UINavigationController to navigate between these two scenes.
 
